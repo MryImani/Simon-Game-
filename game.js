@@ -4,7 +4,7 @@ var userClickedPattern = [];
 var level = 0;
 var startGame = false;
 $(document).keypress(function (event) {
-    if (!startGame && event.key == "a") {
+    if (!startGame ) {
         $('#level-title').text("level " + level);
         nextSequence();
         startGame = true;
